@@ -27,6 +27,8 @@ def start_convert(gui_queue,stop_event):
         df = pd.read_csv(csv_filename)
         print("Opening Chrome")
         print("Starting Log in....")
+        test=os.environ.get('test')
+
         driver.get('https://www.messenger.com/')
         sleep(3)
         login_form_present = len(driver.find_elements(By.XPATH, '//*[@id="email"]')) > 0

@@ -1,5 +1,6 @@
 import PySimpleGUI as SG
 import queue
+import os
 import threading
 import settings
 import img2txt
