@@ -1,0 +1,7 @@
+nltk
+pandas
+Pillow
+PySimpleGUI
+pytesseract
+Requests
+selenium
