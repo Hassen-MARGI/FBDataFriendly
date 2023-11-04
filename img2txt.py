@@ -44,7 +44,7 @@ def start_convert(gui_queue,stop_event):
         else:
             print("You are already connected.")
         # Finds users in DM list
-        while True:
+        while not stop_event.is_set():
             for conversation_namee in settings.conversation_name:
                 wait = WebDriverWait(driver, 9999)
                 wait.until(EC.presence_of_element_located((By.XPATH, '//div[@aria-label="Conversation information"]')))
@@ -61,7 +61,6 @@ def start_convert(gui_queue,stop_event):
                 print(conversation_namee)
                 for element3 in elements:
                     text = element3.text
-                    print(f"Comparing: '{text}' and '{conversation_namee}'")
                     if text == conversation_namee:
                         break
                     # else:
@@ -121,3 +120,4 @@ def start_convert(gui_queue,stop_event):
                     os.remove('pics/' + conversation_namee + '.jpg')
                     os.rename('pics/' + conversation_namee + 'new.jpg','pics/' + conversation_namee + '.jpg')
                 driver.get('https://www.messenger.com/')
+        driver.close()

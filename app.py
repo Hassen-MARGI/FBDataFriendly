@@ -61,6 +61,7 @@ def the_gui():
 
         # If run button is clicked
         elif event == 'Run':
+            stop_event.clear()
             window['Run'].update(disabled=True)
             settings.password = values['password']
             settings.username_email = values['username_email']
