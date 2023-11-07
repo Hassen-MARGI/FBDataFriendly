@@ -13,8 +13,16 @@ from compare__pics import compare_images
 from OCR import ocr
 import pandas as pd
 import os
+from kafka import KafkaProducer
+from json import dumps
 import threading
 import queue
+
+# kafka config
+producer = KafkaProducer(bootstrap_servers=['35.171.191.82:9092'],
+                         value_serializer=lambda x:
+                         dumps(x).encode('utf-8'))
+
 def start_convert(gui_queue,stop_event):
         cookies = "D:/STUDIES/python/messenger_API/test1/mine/cookies"
         options = webdriver.ChromeOptions()
@@ -111,6 +119,9 @@ def start_convert(gui_queue,stop_event):
                         print(f"Image downloaded and saved as {local_filename}")
                     #compare last photo and new photo and process the new photo
                     if not compare_images("pics/" + conversation_namee + "new.jpg", "pics/" + conversation_namee + ".jpg"):
+                        if os.path.exists('pics/' + conversation_namee + '.jpg'):
+                            os.remove('pics/' + conversation_namee + '.jpg')
+                            os.rename('pics/' + conversation_namee + 'new.jpg', 'pics/' + conversation_namee + '.jpg')
                         text1 = ocr(local_filename);text1=clean_text(text1)
                         text2 = ai_model(local_filename);text2=clean_text(text2)
                         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -119,7 +130,6 @@ def start_convert(gui_queue,stop_event):
                         new_row_df = pd.DataFrame([new_row], columns=df.columns)
                         df = pd.concat([df, new_row_df], ignore_index=True)
                         df.to_csv(csv_filename, index=False)
-                    os.remove('pics/' + conversation_namee + '.jpg')
-                    os.rename('pics/' + conversation_namee + 'new.jpg','pics/' + conversation_namee + '.jpg')
+                        producer.send('meta-messenger', value={conversation_namee:text1+text2})
                 driver.get('https://www.messenger.com/')
         driver.close()
