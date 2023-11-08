@@ -8,20 +8,30 @@ from selenium import webdriver
 
 stop_event = threading.Event()
 stop_thread_flag = False
+
+
 def clear_cookies():
-    cookies = "D:/STUDIES/python/messenger_API/test1/mine/cookies"
+    cookies = "cookies"
     options = webdriver.ChromeOptions()
     options.add_argument("user-data-dir=" + cookies)
     driver2 = webdriver.Chrome('chromedriver.exe', options=options)
     driver2.delete_all_cookies()
+
+
 def long_operation_thread(gui_queue, stop_event):
     while not stop_event.is_set():
         img2txt.start_convert(gui_queue, stop_event)
+
+
 def update_output(new_row):
     # Append text to the Logs frame
     current_logs_text = window['user_text'].get()
     window['user_text'].update(current_logs_text + new_row)
+
+
 gui_queue = queue.Queue()
+
+
 def the_gui():
     SG.ChangeLookAndFeel('lightpurple')
     gui_queue = queue.Queue()
@@ -44,7 +54,7 @@ def the_gui():
             title='Login', title_color="#3C323D"), SG.Column(output)],
         [SG.Frame(layout=[
             [SG.Multiline(default_text='logs...', size=(91, 10), key='user_text')],
-        ],title='Logs', title_color="#3C323D")],
+        ], title='Logs', title_color="#3C323D")],
         [SG.Button('Run', size=(10, 1), key="Run"), SG.Button('Exit', size=(10, 1))]
     ]
     global window
@@ -72,9 +82,9 @@ def the_gui():
             # Calls the long_operation_thread
 
             try:
-                thread = threading.Thread(target=long_operation_thread, args=(gui_queue,stop_event), daemon=True)
+                thread = threading.Thread(target=long_operation_thread, args=(gui_queue, stop_event), daemon=True)
                 thread.start()
-                        # Now, wait for messages from the thread
+                # Now, wait for messages from the thread
                 while True:
                     try:
                         message = gui_queue.get(timeout=1)  # Adjust the timeout as needed
@@ -87,7 +97,6 @@ def the_gui():
             except Exception as e:
                 print('Error')
 
-
         # Checks for incoming messages from threads
         try:
             # get_nowait() will get exception when Queue is empty
@@ -99,6 +108,7 @@ def the_gui():
         if message:
             print('Got a message back from the thread: ', message)
     # if user exits the window, then close the window and exit the GUI
+
 
 if __name__ == '__main__':
     gui_queue = None
