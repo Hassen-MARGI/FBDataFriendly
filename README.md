@@ -10,3 +10,8 @@ web based stable diffusion with --api flag [GitHub](https://github.com/AUTOMATIC
 clip-interrogator-ext [GitHub](https://github.com/pharmapsychotic/clip-interrogator-ext)
 
 pytesseract [Website](https://pypi.org/project/pytesseract/)
+
+## Usage
+
+```commandline
+python -m app.py
