@@ -5,16 +5,7 @@ import threading
 import settings
 import img2txt
 from selenium import webdriver
-from kafka import KafkaConsumer
-from time import sleep
-from json import dumps,loads
-import json
-from s3fs import S3FileSystem
 
-consumer = KafkaConsumer(
-    'meta-messenger',
-     bootstrap_servers=['35.171.191.82:9092'],
-    value_deserializer=lambda x: loads(x.decode('utf-8')))
 stop_event = threading.Event()
 stop_thread_flag = False
 def clear_cookies():
@@ -83,7 +74,7 @@ def the_gui():
             try:
                 thread = threading.Thread(target=long_operation_thread, args=(gui_queue,stop_event), daemon=True)
                 thread.start()
-                # Now, wait for messages from the thread
+                        # Now, wait for messages from the thread
                 while True:
                     try:
                         message = gui_queue.get(timeout=1)  # Adjust the timeout as needed

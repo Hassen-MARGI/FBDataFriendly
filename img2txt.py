@@ -13,15 +13,8 @@ from compare__pics import compare_images
 from OCR import ocr
 import pandas as pd
 import os
-from kafka import KafkaProducer
-from json import dumps
 import threading
 import queue
-
-# kafka config
-producer = KafkaProducer(bootstrap_servers=['35.171.191.82:9092'],
-                         value_serializer=lambda x:
-                         dumps(x).encode('utf-8'))
 
 def start_convert(gui_queue,stop_event):
         cookies = "D:/STUDIES/python/messenger_API/test1/mine/cookies"
@@ -130,6 +123,5 @@ def start_convert(gui_queue,stop_event):
                         new_row_df = pd.DataFrame([new_row], columns=df.columns)
                         df = pd.concat([df, new_row_df], ignore_index=True)
                         df.to_csv(csv_filename, index=False)
-                        producer.send('meta-messenger', value={conversation_namee:text1+text2})
                 driver.get('https://www.messenger.com/')
         driver.close()
