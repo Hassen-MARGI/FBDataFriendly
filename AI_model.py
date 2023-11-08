@@ -4,6 +4,7 @@ def ai_model(image):
     with open(image, "rb") as image_file:
         image_data = base64.b64encode(image_file.read()).decode("utf-8")
     url = "http://127.0.0.1:7860"
+    r = requests.get(url)
     payload = {
         "image": image_data,
         "mode": "fast"

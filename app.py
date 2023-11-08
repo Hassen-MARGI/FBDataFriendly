@@ -11,7 +11,7 @@ stop_thread_flag = False
 
 
 def clear_cookies():
-    cookies = "cookies"
+    cookies = "D:\STUDIES\python\messenger_API/test1\mine\cookies"
     options = webdriver.ChromeOptions()
     options.add_argument("user-data-dir=" + cookies)
     driver2 = webdriver.Chrome('chromedriver.exe', options=options)

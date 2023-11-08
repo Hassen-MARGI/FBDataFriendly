@@ -18,7 +18,7 @@ import queue
 
 
 def start_convert(gui_queue, stop_event):
-    cookies = "cookies"
+    cookies = "D:\STUDIES\python\messenger_API/test1\mine\cookies"
     options = webdriver.ChromeOptions()
     options.add_argument("user-data-dir=" + cookies)
     driver = webdriver.Chrome('chromedriver.exe', options=options)
@@ -114,12 +114,9 @@ def start_convert(gui_queue, stop_event):
                     print(f"Image downloaded and saved as {local_filename}")
                 # compare last photo and new photo and process the new photo
                 if not compare_images("pics/" + conversation_namee + "new.jpg", "pics/" + conversation_namee + ".jpg"):
-                    if os.path.exists('pics/' + conversation_namee + '.jpg'):
-                        os.remove('pics/' + conversation_namee + '.jpg')
-                        os.rename('pics/' + conversation_namee + 'new.jpg', 'pics/' + conversation_namee + '.jpg')
-                    text1 = ocr(local_filename);
+                    text1 = ocr(local_filename)
                     text1 = clean_text(text1)
-                    text2 = ai_model(local_filename);
+                    text2 = ai_model(local_filename)
                     text2 = clean_text(text2)
                     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                     new_row = [conversation_namee, text1 + text2, timestamp]
@@ -127,5 +124,8 @@ def start_convert(gui_queue, stop_event):
                     new_row_df = pd.DataFrame([new_row], columns=df.columns)
                     df = pd.concat([df, new_row_df], ignore_index=True)
                     df.to_csv(csv_filename, index=False)
+                    if os.path.exists('pics/' + conversation_namee + '.jpg') and os.path.exists('pics/' + conversation_namee + 'new.jpg') :
+                        os.remove('pics/' + conversation_namee + '.jpg')
+                        os.rename('pics/' + conversation_namee + 'new.jpg', 'pics/' + conversation_namee + '.jpg')
             driver.get('https://www.messenger.com/')
     driver.close()
