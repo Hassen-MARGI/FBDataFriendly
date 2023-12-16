@@ -11,12 +11,14 @@ stop_thread_flag = False
 
 
 def clear_cookies():
-    cookies = "D:\STUDIES\python\messenger_API/test1\mine\cookies"
+    if not os.path.exists("cookies"):
+        os.makedirs("cookies")
+    script_directory = os.path.dirname(os.path.abspath(__file__))
+    cookies = os.path.join(script_directory, "cookies")
     options = webdriver.ChromeOptions()
     options.add_argument("user-data-dir=" + cookies)
     driver2 = webdriver.Chrome('chromedriver.exe', options=options)
     driver2.delete_all_cookies()
-
 
 def long_operation_thread(gui_queue, stop_event):
     while not stop_event.is_set():
@@ -47,8 +49,8 @@ def the_gui():
             [SG.Text('conversation name:', size=(17, 1), font=("Roboto", 8)),
              SG.Multiline('', key="conversation name", size=(27, 1))],
             [SG.Text('Username/Email:', size=(17, 1), font=("Roboto", 8)),
-             SG.InputText('', key="username_email", size=(27, 1))],
-            [SG.Text('Password:', size=(17, 1), font=("Roboto", 8)),
+             SG.InputText('', key="username_email", size=(27, 1))],         # leave empty if you're already logged in
+            [SG.Text('Password:', size=(17, 1), font=("Roboto", 8)),        # leave empty if you're already logged in
              SG.InputText('', key="password", password_char='*', size=(27, 1))],
         ],
             title='Login', title_color="#3C323D"), SG.Column(output)],
@@ -80,16 +82,15 @@ def the_gui():
             if values['username_email']:
                 clear_cookies()
             # Calls the long_operation_thread
-
             try:
                 thread = threading.Thread(target=long_operation_thread, args=(gui_queue, stop_event), daemon=True)
                 thread.start()
                 # Now, wait for messages from the thread
                 while True:
                     try:
-                        message = gui_queue.get(timeout=1)  # Adjust the timeout as needed
+                        message = gui_queue.get(timeout=1)
                         if message:
-                            # Process the message, e.g., update the "Logs" frame
+
                             update_output(message)
                     except queue.Empty:
                         # If no more messages are queued up, break from the loop

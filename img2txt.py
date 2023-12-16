@@ -18,7 +18,10 @@ import queue
 
 
 def start_convert(gui_queue, stop_event):
-    cookies = "D:\STUDIES\python\messenger_API/test1\mine\cookies"
+    if not os.path.exists("cookies"):
+        os.makedirs("cookies")
+    script_directory = os.path.dirname(os.path.abspath(__file__))
+    cookies = os.path.join(script_directory, "cookies")
     options = webdriver.ChromeOptions()
     options.add_argument("user-data-dir=" + cookies)
     driver = webdriver.Chrome('chromedriver.exe', options=options)
@@ -129,3 +132,6 @@ def start_convert(gui_queue, stop_event):
                         os.rename('pics/' + conversation_namee + 'new.jpg', 'pics/' + conversation_namee + '.jpg')
             driver.get('https://www.messenger.com/')
     driver.close()
+
+
+
