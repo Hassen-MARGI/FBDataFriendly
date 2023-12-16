@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BookmarksViewState">
+    <option name="groupLineBookmarks" value="false" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a5cd208d-136b-400d-adbb-350fdea604fb" name="Changes" comment="Initial commit" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2WzX08FvSOWcxPOPeevbVmNukKM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/STUDIES/python/messenger_API/test1/mine/app.py&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\STUDIES\python\messenger_API\test1\mine" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\STUDIES\python\messenger_API\test1\mine" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python">
+      <module name="mine" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\Margi\AppData\Local\Programs\Python\Python310\python.exe" />
+      <option name="SDK_NAME" value="Python 3.9" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a5cd208d-136b-400d-adbb-350fdea604fb" name="Changes" comment="" />
+      <created>1697736156164</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697736156164</updated>
+      <workItem from="1697736157515" duration="15373000" />
+      <workItem from="1697754782603" duration="3455000" />
+      <workItem from="1697758288446" duration="244000" />
+      <workItem from="1697798965893" duration="4994000" />
+      <workItem from="1698232583656" duration="3329000" />
+      <workItem from="1698340495578" duration="6437000" />
+      <workItem from="1698413591737" duration="679000" />
+      <workItem from="1698424346418" duration="794000" />
+      <workItem from="1698436217193" duration="3101000" />
+      <workItem from="1698495776899" duration="1489000" />
+      <workItem from="1698593437807" duration="10215000" />
+      <workItem from="1698772610752" duration="10637000" />
+      <workItem from="1698831278371" duration="1479000" />
+      <workItem from="1698853242051" duration="17622000" />
+      <workItem from="1698924644657" duration="5000" />
+      <workItem from="1698951211170" duration="23936000" />
+      <workItem from="1699015695439" duration="2541000" />
+      <workItem from="1699020689405" duration="1001000" />
+      <workItem from="1699021950969" duration="14000" />
+      <workItem from="1699021977434" duration="104000" />
+      <workItem from="1699022096571" duration="668000" />
+      <workItem from="1699022817871" duration="96000" />
+      <workItem from="1699022935931" duration="291000" />
+      <workItem from="1699023236877" duration="11000" />
+      <workItem from="1699105775118" duration="8101000" />
+      <workItem from="1699132648255" duration="3152000" />
+      <workItem from="1699192156217" duration="670000" />
+      <workItem from="1699355333587" duration="5390000" />
+      <workItem from="1699449740515" duration="5504000" />
+      <workItem from="1699553035030" duration="405000" />
+      <workItem from="1699617648552" duration="6000" />
+      <workItem from="1701706258935" duration="80000" />
+      <workItem from="1701706393838" duration="16000" />
+      <workItem from="1701800524732" duration="579000" />
+      <workItem from="1701817345208" duration="3367000" />
+      <workItem from="1701868792573" duration="2432000" />
+      <workItem from="1702748066801" duration="2077000" />
+      <workItem from="1702755777195" duration="1243000" />
+      <workItem from="1702759823788" duration="942000" />
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1698975520470</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698975520470</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1699019713181</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699019713181</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Initial commit">
+      <created>1699019768283</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699019768283</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Initial commit">
+      <created>1699019787901</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699019787901</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Initial commit">
+      <created>1699022201508</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699022201508</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Initial commit">
+      <created>1699022456840</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699022456840</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Initial commit">
+      <created>1699022500585</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699022500585</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Initial commit">
+      <created>1699022589475</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1699022589475</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Initial commit">
+      <created>1699022606695</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1699022606695</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Initial commit">
+      <created>1699022710236</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1699022710236</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Initial commit 1">
+      <created>1699022721256</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1699022721256</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Initial commit">
+      <created>1699023108264</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1699023108264</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Initial commit">
+      <created>1699105828113</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1699105828113</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Initial commit">
+      <created>1699108028309</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1699108028309</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Initial commit">
+      <created>1699110700824</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1699110700824</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Initial commit">
+      <created>1699110724747</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1699110724747</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Initial commit">
+      <created>1699362518654</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1699362518654</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Initial commit">
+      <created>1699456128446</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1699456128446</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Initial commit">
+      <created>1699456297142</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1699456297142</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Initial commit">
+      <created>1699456332313</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1699456332313</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Initial commit">
+      <created>1699456343957</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1699456343957</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Initial commit">
+      <created>1699456709397</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1699456709397</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Initial commit">
+      <created>1699457008899</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1699457008899</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Initial commit">
+      <created>1699457133287</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1699457133287</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Initial commit">
+      <created>1699457137021</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1699457137021</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Initial commit">
+      <created>1699457563895</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1699457563895</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Initial commit">
+      <created>1699458419908</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1699458419908</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Initial commit">
+      <created>1702748245535</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1702748245535</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Initial commit">
+      <created>1702749565904</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1702749565904</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commits 1" />
+    <MESSAGE value="Initial commit 1" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mine$app.coverage" NAME="app Coverage Results" MODIFIED="1702748578563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mine$OCR.coverage" NAME="OCR Coverage Results" MODIFIED="1698783559968" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mine$img2txt.coverage" NAME="img2txt Coverage Results" MODIFIED="1702748320477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mine$compare__pics.coverage" NAME="compare__pics Coverage Results" MODIFIED="1697754940231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mine$cleaning.coverage" NAME="cleaning Coverage Results" MODIFIED="1698346357103" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mine$rami.coverage" NAME="rami Coverage Results" MODIFIED="1698601432387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mine$main.coverage" NAME="main Coverage Results" MODIFIED="1697758290909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mine$testing.coverage" NAME="testing Coverage Results" MODIFIED="1698865044477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mine$.coverage" NAME=" Coverage Results" MODIFIED="1698596475192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mine$errorhandler.coverage" NAME="errorhandler Coverage Results" MODIFIED="1697750501649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/AppData/Local/Programs/Python/Python310/Lib/site-packages/selenium/webdriver/remote" />
+    <SUITE FILE_PATH="coverage/mine$AI_model.coverage" NAME="AI_model Coverage Results" MODIFIED="1698860395835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mine$spammer.coverage" NAME="spammer Coverage Results" MODIFIED="1697803488675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
